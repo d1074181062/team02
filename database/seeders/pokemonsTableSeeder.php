@@ -23,5 +23,14 @@ class pokemonsTableSeeder extends Seeder
             'group'=>'關都',
             'place'=>'山區'
         ]);
+        DB::table('pokemons')->insert([
+            'name'=>'噴火龍',
+            'team_num'=>'1',
+            'height'=>'1.7',
+            'weight'=>'90.5',
+            'growing'=>'否',
+            'group'=>'關都',
+            'place'=>'山脈和活火山'
+        ]);
     }
 }

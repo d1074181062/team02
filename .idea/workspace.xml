@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a15e5c9f-83c4-4a1e-83e1-f956d39693fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/pokemonsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/pokemonsTableSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/property" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -175,7 +174,10 @@
       <updated>1602138069950</updated>
       <workItem from="1602138071188" duration="4770000" />
       <workItem from="1602724566963" duration="14167000" />
-      <workItem from="1603331068180" duration="10962000" />
+      <workItem from="1603331068180" duration="11293000" />
+      <workItem from="1603933849239" duration="2487000" />
+      <workItem from="1603937183343" duration="2749000" />
+      <workItem from="1603944012691" duration="8011000" />
     </task>
     <servers />
   </component>
@@ -183,10 +185,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="759" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1603331122105">
+    <state x="694" y="414" key="com.intellij.ide.util.TipDialog" timestamp="1603944014509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="759" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603331122105" />
+    <state x="694" y="414" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603944014509" />
     <state x="867" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602726644701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
