@@ -6,10 +6,13 @@
 <h1>
     單一屬性
 </h1>
-<?php echo $property_id;?><br/>
-寶可夢名稱：{{$name}}<br/>
-屬性：{{$grop}}<br/>
-主場：{{$area}}<br/>
+編號：{{$id}}<br/>
+派系：{{$property}}<br/>
+特性：{{$characteristic}}<br/>
+主場：{{$home}}<br/>
+弱點屬性：{{$weakness}}<br/>
+
 <a href="<?php echo route('property.index');?>">回全屬性</a>
 </body>
 </html>
+
