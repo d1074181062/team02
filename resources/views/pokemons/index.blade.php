@@ -25,9 +25,16 @@
         <td>{{$pokemon->id}}</td>
         <td>{{$pokemon->name}}</td>
         <td>{{$pokemon->team_num}}</td>
-        <td>{{$pokemon->height}}</td>
-        <td>{{$pokemon->weight}}</td>
-        <td>{{$pokemon->growing}}</td>
+        <td>{{$pokemon->height}}m</td>
+        <td>{{$pokemon->weight}}kg</td>
+        <td>
+        @if ($pokemon->growing=='是')
+            <p style="color: blue;">
+        @else
+            <p style="color: red;">
+        @endif
+       {{$pokemon->growing}}</p></td>
+
         <td>{{$pokemon->group}}</td>
         <td>{{$pokemon->place}}</td>
     </tr>

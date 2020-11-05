@@ -9,8 +9,8 @@
 編號：{{$id}}<br/>
 神奇寶貝：{{$name}}<br/>
 派系編號：{{$team_num}}<br/>
-身高：{{$height}}<br/>
-體重：{{$weight}}<br/>
+身高：{{$height}}m<br/>
+體重：{{$weight}}kg<br/>
 進化可能：{{$growing}}<br/>
 地區：{{$group}}<br/>
 出現場所：{{$place}}<br/>
