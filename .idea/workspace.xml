@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a15e5c9f-83c4-4a1e-83e1-f956d39693fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/pokemonsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/pokemonsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/pokemon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/property.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/property.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_22_062505_create_property_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_22_062505_create_property_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +182,7 @@
       <workItem from="1603933849239" duration="2487000" />
       <workItem from="1603937183343" duration="2749000" />
       <workItem from="1603944012691" duration="8011000" />
+      <workItem from="1604539417090" duration="8689000" />
     </task>
     <servers />
   </component>
@@ -185,10 +190,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="694" y="414" key="com.intellij.ide.util.TipDialog" timestamp="1603944014509">
+    <state x="726" y="333" key="NewPhpClassDialog" timestamp="1604541968531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="694" y="414" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603944014509" />
+    <state x="726" y="333" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604541968531" />
+    <state x="694" y="414" key="com.intellij.ide.util.TipDialog" timestamp="1604539425530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="694" y="414" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604539425530" />
     <state x="867" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602726644701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

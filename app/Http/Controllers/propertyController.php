@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\property;
 use Illuminate\Http\Request;
 
 class propertyController extends Controller

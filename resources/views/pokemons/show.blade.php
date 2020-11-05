@@ -7,9 +7,13 @@
     單一寶可夢
 </h1>
 
-寶可夢名稱：{{$name}}<br/>
-力量：{{$power}}<br/>
-顏色：{{$color}}<br/>
+神奇寶貝：{{$name}}<br/>
+派系編號：{{$team_num}}<br/>
+身高：{{$height}}<br/>
+體重：{{$weight}}<br/>
+進化可能：{{$growing}}<br/>
+地區：{{$group}}<br/>
+出現場所：{{$place}}<br/>
 <a href="<?php echo route('pokemons.index');?>">回全寶可夢</a>
 </body>
 </html>

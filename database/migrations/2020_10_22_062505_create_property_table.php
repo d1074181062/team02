@@ -16,9 +16,9 @@ class CreatePropertyTable extends Migration
         Schema::create('property', function (Blueprint $table) {
             $table->id()->comment('編號');;
             $table->string('property')->comment('派系');
-            $table->tinyInteger('characteristic')->comment('特性');
-            $table->float('home')->comment('主場');
-            $table->float('weakness')->comment('弱點屬性');
+            $table->string('characteristic')->comment('特性');
+            $table->string('home')->comment('主場');
+            $table->string('weakness')->comment('弱點屬性');
             $table->timestamps();
         });
     }
