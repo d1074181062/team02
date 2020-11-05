@@ -9,7 +9,9 @@ class propertyController extends Controller
     //
     public function index()
     {
-        return view('property.index');
+        $properties=property::all();
+
+        return view('property.index',['properties'=>$properties]);
     }
 
     public function create()

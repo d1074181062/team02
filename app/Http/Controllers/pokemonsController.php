@@ -11,7 +11,9 @@ class pokemonsController extends Controller
     //
     public function index()
     {
-        return view('pokemons.index');
+        $pokemons=pokemon::all();
+
+        return view('pokemons.index',['pokemons'=>$pokemons]);
     }
 
     public function create()
