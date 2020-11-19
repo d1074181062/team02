@@ -10,6 +10,6 @@
 力量：{{$pokemon_power}}<br/>
 顏色：{{$pokemon_color}}<br/>
 
-<a href="<?php echo route('pokemons.index');?>">回全寶可夢</a>
+<a href="{{ route('pokemons.index')}}">回全寶可夢</a>
 </body>
 </html>

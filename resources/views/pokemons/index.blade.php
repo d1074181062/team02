@@ -1,12 +1,10 @@
-<html>
-<title>
-    全寶可夢
-</title>
-<body>
-<h1>
-    全寶可夢
-</h1>
-<a href="<?php echo route('property.index');?>">去全屬性</a>
+
+@extends('app')
+@section('title','全寶可夢')
+@section('header','全寶可夢')
+@section('contents')
+
+
 <table>
     <tr>
         <th>編號</th>
@@ -17,6 +15,8 @@
         <th>進化可能</th>
         <th>地區</th>
         <th>出現場所</th>
+        <th>操作1</th>
+        <th>操作2</th>
 
 
     </tr>
@@ -37,10 +37,13 @@
 
         <td>{{$pokemon->group}}</td>
         <td>{{$pokemon->place}}</td>
+            <td><a href="{{ route('pokemons.show',['id'=>$pokemon->id])}}">顯示</a></td>
+            <td><a href="{{ route('pokemons.edit',['id'=>$pokemon->id])}}">修改</a></td>
     </tr>
         @endforeach
 </table>
-</body>
-</html>
+
+@endsection
+
 
 

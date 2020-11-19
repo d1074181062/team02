@@ -40,10 +40,13 @@ Route::get('property/{id}',[propertyController::class,'show'])->where('id','[0-5
 
 
 
-Route::get('property/{id}/edit',[propertyController::class,'edit'])->where('id','[0-50]+')->name('pokemons.edit');
+Route::get('property/{id}/edit',[propertyController::class,'edit'])->where('id','[0-50]+')->name('property.edit');
 
 
 
 Route::get('property/create', [propertyController::class,'create'])->name('property.create');
+
+
+
 
 

@@ -14,6 +14,6 @@
 進化可能：{{$growing}}<br/>
 地區：{{$group}}<br/>
 出現場所：{{$place}}<br/>
-<a href="<?php echo route('pokemons.index');?>">回全寶可夢</a>
+<a href="{{ route('pokemons.index')}}">回全寶可夢</a>
 </body>
 </html>

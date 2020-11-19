@@ -29,7 +29,9 @@ class pokemonsController extends Controller
             'created_at'=>Carbon::now() ,
             'updated_at'=>Carbon::now()]);
         return view('pokemons.create',$pokemon->toArray());
+
     }
+
     public function show($id)
     {
         $temp=pokemon::find($id);

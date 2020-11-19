@@ -20,3 +20,6 @@ class property extends Model
         'carbon'
     ];
 }
+
+
+

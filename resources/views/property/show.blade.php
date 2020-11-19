@@ -12,7 +12,7 @@
 主場：{{$home}}<br/>
 弱點屬性：{{$weakness}}<br/>
 
-<a href="<?php echo route('property.index');?>">回全屬性</a>
+<a href="{{ route('property.index')}}">回全屬性</a>
 </body>
 </html>
 

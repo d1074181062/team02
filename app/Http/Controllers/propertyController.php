@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\property;
+use Faker\Guesser\Name;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class propertyController extends Controller
 {
@@ -16,15 +18,21 @@ class propertyController extends Controller
 
     public function create()
     {
-        $property=property::create([
-            'property'=>'史丹利粉',
-            'characteristic'=>'哭阿',
-            'home'=>'召喚峽谷',
-            'weakness'=>'吃砲車',
+
+        /*$property=property::insert([
+            'property'=>$request->input('property',"1"),
+            'characteristic'=>$request->input('characteristic',"2"),
+            'home'=>$request->input('home',"3"),
+            'weakness'=>$request->input('weakness',"4"),
             'created_at'=>Carbon::now() ,
             'updated_at'=>Carbon::now()]);
-        return view('property.create',$property->toArray());
+        $select=property::all()->toArray();-->
 
+
+            return view('property.create', $select);*/
+        $request = property::all();
+
+        return view('property.create', ["somatotypes" => $request]);
 
 
 
