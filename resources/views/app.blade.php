@@ -1,5 +1,5 @@
 
-<title>@yield('title')</title>
+<title >@yield('title')</title>
 @include('header')
 @yield('contents')
 @include('footer')

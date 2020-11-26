@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a15e5c9f-83c4-4a1e-83e1-f956d39693fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/team02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/team02.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/property/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +140,7 @@
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iaG0vGVpwcmMpYcikJ4G3MQFha" />
@@ -140,7 +153,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../team07" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,7 +192,8 @@
       <workItem from="1604539417090" duration="22637000" />
       <workItem from="1605145401306" duration="10832000" />
       <workItem from="1605748451110" duration="10232000" />
-      <workItem from="1605767578886" duration="4341000" />
+      <workItem from="1605767578886" duration="4778000" />
+      <workItem from="1606353499753" duration="10660000" />
     </task>
     <servers />
   </component>

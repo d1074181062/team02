@@ -46,6 +46,7 @@ Route::get('property/{id}/edit',[propertyController::class,'edit'])->where('id',
 
 Route::get('property/create', [propertyController::class,'create'])->name('property.create');
 
+Route::post('pokemon/store', [pokemonsController::class,'store'])->name('pokemon.store');
 
 
 

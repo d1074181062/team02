@@ -1,4 +1,5 @@
 <html>
+<div align="center">
 <title>
     單一寶可夢
 </title>
@@ -16,4 +17,5 @@
 出現場所：{{$place}}<br/>
 <a href="{{ route('pokemons.index')}}">回全寶可夢</a>
 </body>
+</div >
 </html>

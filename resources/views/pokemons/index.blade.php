@@ -1,4 +1,4 @@
-
+<div align="center">
 @extends('app')
 @section('title','全寶可夢')
 @section('header','全寶可夢')
@@ -22,12 +22,13 @@
     </tr>
     @foreach($pokemons as $pokemon)
     <tr>
-        <td>{{$pokemon->id}}</td>
-        <td>{{$pokemon->name}}</td>
-        <td>{{$pokemon->team_num}}</td>
-        <td>{{$pokemon->height}}m</td>
-        <td>{{$pokemon->weight}}kg</td>
-        <td>
+
+        <td align="center">{{$pokemon->id}}</td>
+        <td align="center">{{$pokemon->name}}</td>
+        <td align="center">{{$pokemon->team_num}}</td>
+        <td align="center">{{$pokemon->height}}m</td>
+        <td align="center">{{$pokemon->weight}}kg</td>
+        <td align="center">
         @if ($pokemon->growing=='是')
             <p style="color: blue;">
         @else
@@ -35,12 +36,14 @@
         @endif
        {{$pokemon->growing}}</p></td>
 
-        <td>{{$pokemon->group}}</td>
-        <td>{{$pokemon->place}}</td>
-            <td><a href="{{ route('pokemons.show',['id'=>$pokemon->id])}}">顯示</a></td>
-            <td><a href="{{ route('pokemons.edit',['id'=>$pokemon->id])}}">修改</a></td>
+        <td align="center">{{$pokemon->group}}</td>
+        <td align="center">{{$pokemon->place}}</td>
+            <td align="center"><a href="{{ route('pokemons.show',['id'=>$pokemon->id])}}">顯示</a></td>
+            <td align="center"><a href="{{ route('pokemons.edit',['id'=>$pokemon->id])}}">修改</a></td>
+
     </tr>
         @endforeach
+    </div>
 </table>
 
 @endsection

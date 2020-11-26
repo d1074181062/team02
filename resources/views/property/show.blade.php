@@ -1,4 +1,5 @@
 <html>
+<div align="center">
 <title>
     單一屬性
 </title>
@@ -14,5 +15,6 @@
 
 <a href="{{ route('property.index')}}">回全屬性</a>
 </body>
+</div >
 </html>
 
