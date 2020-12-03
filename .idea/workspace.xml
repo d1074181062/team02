@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a15e5c9f-83c4-4a1e-83e1-f956d39693fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/team02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/team02.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pokemons/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/property/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/property/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/property/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/property/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +190,8 @@
       <workItem from="1605145401306" duration="10832000" />
       <workItem from="1605748451110" duration="10232000" />
       <workItem from="1605767578886" duration="4778000" />
-      <workItem from="1606353499753" duration="10660000" />
+      <workItem from="1606353499753" duration="10705000" />
+      <workItem from="1606958681585" duration="17623000" />
     </task>
     <servers />
   </component>
@@ -201,10 +199,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605752464460">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606973829811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605752464460" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606973829811" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605751623093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,10 +215,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="802" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604556956936" />
-    <state x="686" y="575" key="com.intellij.ide.util.TipDialog" timestamp="1605748468144">
+    <state x="686" y="575" key="com.intellij.ide.util.TipDialog" timestamp="1606958952943">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="686" y="575" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605748468144" />
+    <state x="686" y="575" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606958952943" />
     <state x="867" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602726644701">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -67,4 +67,42 @@ class propertyController extends Controller
     {
         return view('property.edit')->with("property_edit_id",$id);;
     }
+    public function store(Request $request)
+    {
+        $property = $request->input('property');
+        $characteristic = $request->input('characteristic');
+        $home = $request->input('home');
+        $weakness = $request->input('weakness');
+
+        property::create([
+            'property' => $property,
+            'characteristic' => $characteristic,
+            'home' => $home,
+            'weakness' => $weakness,
+            'created' => carbon::now()
+
+        ]);
+        return redirect('property');
+    }
+    public function update($property_edit_id,Request $request)
+    {
+        $property=property::FindOrFail($property_edit_id);
+        $property->property = $request->input('property');
+        $property->characteristic = $request->input('characteristic');
+        $property->home = $request->input('home');
+        $property->weakness = $request->input('weakness');
+        $property->save();
+
+
+        return redirect('property');
+    }
+
+    public function delete($id)
+    {
+        $property=property::FindOrFail($id);
+        $property->delete();
+
+
+        return redirect('property');
+    }
 }

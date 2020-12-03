@@ -21,32 +21,40 @@ Route::get('/', function () {
 Route::get('pokemons',[pokemonsController::class,'index'])->name('pokemons.index');;
 
 
-Route::get('pokemons/{id}', [pokemonsController::class,'show'])->where('id','[0-50]+')->name('pokemons.show');;
+Route::get('pokemons/{id}', [pokemonsController::class,'show'])->where('id','[0-9]+')->name('pokemons.show');;
 
 
-Route::get('pokemons/{id}/edit', [pokemonsController::class,'edit'])->where('id','[0-50]+')->name('pokemons.edit');
+Route::get('pokemons/{id}/edit', [pokemonsController::class,'edit'])->where('id','[0-9]+')->name('pokemons.edit');
 
 
 
 Route::get('pokemons/create', [pokemonsController::class,'create'])->name('pokemons.create');
 
+Route::post('pokemons/store', [pokemonsController::class,'store'])->name('pokemons.store');
 
+Route::patch('pokemons/update/{id}', [pokemonsController::class,'update'])->where('id','[0-9]+')->name('pokemons.update');
+
+Route::delete('pokemons/delete/{id}', [pokemonsController::class,'delete'])->where('id','[0-9]+')->name('pokemons.delete');
 
 Route::get('property',[propertyController::class,'index'])->name('property.index');
 
 
 
-Route::get('property/{id}',[propertyController::class,'show'])->where('id','[0-50]+')->name('property.show');
+Route::get('property/{id}',[propertyController::class,'show'])->where('id','[0-9]+')->name('property.show');
 
 
 
-Route::get('property/{id}/edit',[propertyController::class,'edit'])->where('id','[0-50]+')->name('property.edit');
+Route::get('property/{id}/edit',[propertyController::class,'edit'])->where('id','[0-9]+')->name('property.edit');
 
 
 
 Route::get('property/create', [propertyController::class,'create'])->name('property.create');
 
-Route::post('pokemon/store', [pokemonsController::class,'store'])->name('pokemon.store');
+Route::post('property/store', [propertyController::class,'store'])->name('property.store');
+
+Route::patch('property/update/{id}', [propertyController::class,'update'])->where('id','[0-9]+')->name('property.update');
+
+Route::delete('property/delete/{id}', [propertyController::class,'delete'])->where('id','[0-9]+')->name('pokemons.delete');
 
 
 

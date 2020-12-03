@@ -1,12 +1,34 @@
-<html>
-<title>
-    修改單一屬性
-</title>
-<body>
-<h1>
-    修改單一屬性
-</h1>
-{{ $property_edit_id}}><br/>
-<a href="{{ route('property.index')}}">回全屬性</a>
-</body>
-</html>
+@extends('app')
+
+@section('title','新增屬性')
+
+@section('header','新增屬性')
+
+@section('contents')
+    <a href="{{ route('property.index')}}">回全屬性</a>
+    {!! Form::open(['url'=>'property/store']) !!}
+    <div align="center" class="form-group">
+        {!! Form::label('property_property','派系') !!}
+        {!! Form::text('property',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('property_characteristic','特性') !!}
+        {!! Form::text('characteristic',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('property_home','主場') !!}
+        {!! Form::text('home',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('property_weakness','弱點屬性') !!}
+        {!! Form::text('weakness',null,['class'=>'form-control']) !!}
+    </div>
+
+    <div align="center" class="form-group">
+        {!! Form::submit('新增',['class'=>'btn btn-primary form-control']) !!}
+    </div>
+    {!! Form::close() !!}
+
+
+
+@endsection

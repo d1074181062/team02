@@ -5,7 +5,7 @@
 @section('header','新增寶可夢')
 
 @section('contents')
-    {!! Form::open(['url'=>'pokemon/store']) !!}
+    {!! Form::open(['url'=>'pokemons/store']) !!}
     <div align="center" class="form-group">
         {!! Form::label('pokemon_name','神奇寶貝') !!}
         {!! Form::text('name',null,['class'=>'form-control']) !!}

@@ -1,15 +1,45 @@
-<html>
-<title>
-    修改單一寶可夢
-</title>
-<body>
-<h1>
-    修改單一寶可夢
-</h1>
-寶可夢名稱：{{$pokemon_name}}<br/>
-力量：{{$pokemon_power}}<br/>
-顏色：{{$pokemon_color}}<br/>
+@extends('app')
 
-<a href="{{ route('pokemons.index')}}">回全寶可夢</a>
-</body>
-</html>
+@section('title','修改第'.$po_id.'寶可夢')
+
+@section('header','修改第'.$po_id.'寶可夢')
+
+@section('contents')
+    <a href="{{ route('pokemons.index')}}">回全寶可夢</a>
+    {!! Form::open(['url'=>'pokemons/update/'.$po_id,'method'=>'patch']) !!}
+    <div align="center" class="form-group">
+        {!! Form::label('pokemon_name','神奇寶貝') !!}
+        {!! Form::text('name',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('pokemon_team_num','派系編號') !!}
+        {!! Form::text('team_num',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('pokemon_height','身高') !!}
+        {!! Form::text('height',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('pokemon_weight','體重') !!}
+        {!! Form::text('weight',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('pokemon_growing','進化可能') !!}
+        {!! Form::text('growing',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('pokemon_group','地區') !!}
+        {!! Form::text('group',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::label('pokemon_place','出現場所') !!}
+        {!! Form::text('place',null,['class'=>'form-control']) !!}
+    </div>
+    <div align="center" class="form-group">
+        {!! Form::submit('修改',['class'=>'btn btn-primary form-control']) !!}
+    </div>
+    {!! Form::close() !!}
+@endsection
+
+
+

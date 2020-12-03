@@ -2,8 +2,9 @@
 @extends('app')
 @section('title','全寶可夢')
 @section('header','全寶可夢')
-@section('contents')
 
+@section('contents')
+        <a align="center" href="{{ route('pokemons.create')}}">新增寶可夢</a>
 
 <table>
     <tr>
@@ -25,7 +26,7 @@
 
         <td align="center">{{$pokemon->id}}</td>
         <td align="center">{{$pokemon->name}}</td>
-        <td align="center">{{$pokemon->team_num}}</td>
+        <td align="center">{{$pokemon->property}}</td>
         <td align="center">{{$pokemon->height}}m</td>
         <td align="center">{{$pokemon->weight}}kg</td>
         <td align="center">
@@ -40,6 +41,13 @@
         <td align="center">{{$pokemon->place}}</td>
             <td align="center"><a href="{{ route('pokemons.show',['id'=>$pokemon->id])}}">顯示</a></td>
             <td align="center"><a href="{{ route('pokemons.edit',['id'=>$pokemon->id])}}">修改</a></td>
+        <td align="center">
+        <Form action="{{url('/pokemons/delete',['id'=>$pokemon->id])}}" method="post">
+            <input class="btn btn-default" type="submit" value="刪除" />
+            @method('delete')
+            @csrf
+         </Form>
+        </td>
 
     </tr>
         @endforeach
