@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 use App\Models\property;
+use App\Models\pokemon;
 use Faker\Guesser\Name;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
-
+use Illuminate\Support\Facades\DB;
 class propertyController extends Controller
 {
     //
@@ -65,7 +66,12 @@ class propertyController extends Controller
     }
     public function edit($id)
     {
-        return view('property.edit')->with("property_edit_id",$id);;
+
+
+        $property = property::findOrFail($id);
+
+return view('property.edit', ['property' =>$property])->with("property_edit_id",$id);
+
     }
     public function store(Request $request)
     {

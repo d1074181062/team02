@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\pokemon;
+use App\Models\property;
 use Carbon\Carbon;
 use Database\Seeders\pokemonsTableSeeder;
 use Illuminate\Http\Request;
@@ -12,21 +13,15 @@ class pokemonsController extends Controller
     //
     public function index()
     {
-        //$pokemons=pokemon::all();
-        $pokemon=DB::table('pokemons')
-            ->join('property','pokemons.team_num','=','property.id')
-            ->orderBy('pokemons.id')
-            ->select(
-                'pokemons.id',
-                'pokemons.name',
-                'property.property as property',
-                'pokemons.height',
-                'pokemons.weight',
-                'pokemons.growing',
-                'pokemons.group',
-                'pokemons.place'
-                )->get();
+
+        $pokemon = pokemon::Allpokemon()->get();
+
         return view('pokemons.index',['pokemons'=>$pokemon]);
+    }
+    public function growing()
+    {
+        $pokemon = pokemon::growing()->get();
+        return view('pokemons.index', ['pokemons'=>$pokemon]);
     }
 
     public function create()
@@ -38,18 +33,33 @@ class pokemonsController extends Controller
 
     public function show($id)
     {
-        $temp=pokemon::find($id);
-        if ($temp==null)
-            return"no find";
-        $pokemon=$temp->toArray();
+        //$temp=pokemon::find($id);
+        //if ($temp==null)
+         //   return"no find";
+        //$pokemon=$temp->toArray();
+        $pokemon=pokemon::findOrFail($id);
+        $property=property::findOrFail($pokemon->team_num);
 
-        return view('pokemons.show',$pokemon);
+        return view('pokemons.show',['pokemons'=>$pokemon,'property_name'=>$property->property]);
     }
     public function edit($id)
     {
+        $properties = DB::table('property')
+            ->select('property.id', 'property.property')
+            ->orderBy('property.id', 'asc')
+            ->get();
+
+        $data = [];
+        foreach ( $properties as $property)
+        {
+            $data[$property->id] = $property->property;
+        }
+
+        $pokemons = pokemon::findOrFail($id);
+
+        return view('pokemons.edit', ['pokemons' =>$pokemons, 'properties' => $data])->with("po_id",$id);
 
 
-        return view('pokemons.edit')->with("po_id",$id);
     }
     public function store(Request $request)
     {

@@ -4,7 +4,14 @@
 @section('header','全寶可夢')
 
 @section('contents')
-        <a align="center" href="{{ route('pokemons.create')}}">新增寶可夢</a>
+        <!--<a align="center" href="{{ route('pokemons.create')}}">新增寶可夢</a>-->
+        <!--<a align="center" href="{{ route('pokemons.growing')}}">不可進化寶可夢</a>-->
+        <select onchange="location.href=this.options[this.selectedIndex].value">
+            <OPTION> 請選擇</OPTION>
+            <OPTION   VALUE="{{ route('pokemons.index')}}"> 全寶可夢</OPTION>
+            <OPTION   VALUE="{{ route('pokemons.growing')}}"> 不可進化寶可夢</OPTION>
+            <OPTION VALUE="{{ route('pokemons.create')}}">新增寶可夢</OPTION>
+        </select>
 
 <table>
     <tr>

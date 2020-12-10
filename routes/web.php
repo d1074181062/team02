@@ -20,6 +20,9 @@ Route::get('/', function () {
 
 Route::get('pokemons',[pokemonsController::class,'index'])->name('pokemons.index');;
 
+Route::get('pokemons/growing', [pokemonsController::class, 'growing'])->name('pokemons.growing');
+
+
 
 Route::get('pokemons/{id}', [pokemonsController::class,'show'])->where('id','[0-9]+')->name('pokemons.show');;
 
