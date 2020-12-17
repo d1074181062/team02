@@ -12,7 +12,14 @@
             <OPTION   VALUE="{{ route('pokemons.growing')}}"> 不可進化寶可夢</OPTION>
             <OPTION VALUE="{{ route('pokemons.create')}}">新增寶可夢</OPTION>
         </select>
-
+            <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+                <form action="{{ url('pokemons/group') }}" method='POST'>
+                    {!! Form::label('pos', '選取位置：') !!}
+                    {!! Form::select('pos', $groups, ['class' => 'form-control']) !!}
+                    <input class="btn btn-default" type="submit" value="查詢" />
+                    @csrf
+                </form>
+            </div>
 <table>
     <tr>
         <th>編號</th>

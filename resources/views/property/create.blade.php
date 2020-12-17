@@ -3,7 +3,7 @@
 @section('title','新增屬性')
 
 @section('header','新增屬性')
-
+@include('message.errors')
 @section('contents')
     {!! Form::open(['url'=>'property/store']) !!}
     @include('property.form', ['submitButtonText'=>"新增"])

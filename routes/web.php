@@ -22,7 +22,7 @@ Route::get('pokemons',[pokemonsController::class,'index'])->name('pokemons.index
 
 Route::get('pokemons/growing', [pokemonsController::class, 'growing'])->name('pokemons.growing');
 
-
+Route::post('pokemons/group', [pokemonsController::class, 'group'])->name('pokemons.group');
 
 Route::get('pokemons/{id}', [pokemonsController::class,'show'])->where('id','[0-9]+')->name('pokemons.show');;
 

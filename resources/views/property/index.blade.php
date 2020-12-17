@@ -7,6 +7,9 @@
 
 @section('contents')
     <a align="center" href="{{ route('property.create')}}">新增屬性</a>
+    <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+
+    </div>
 <table>
     <tr>
         <th>編號</th>

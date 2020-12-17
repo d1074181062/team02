@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\CreatepropertyRequest;
 use App\Models\property;
 use App\Models\pokemon;
 use Faker\Guesser\Name;
@@ -73,7 +74,7 @@ class propertyController extends Controller
 return view('property.edit', ['property' =>$property])->with("property_edit_id",$id);
 
     }
-    public function store(Request $request)
+    public function store(CreatepropertyRequest $request)
     {
         $property = $request->input('property');
         $characteristic = $request->input('characteristic');
@@ -90,7 +91,7 @@ return view('property.edit', ['property' =>$property])->with("property_edit_id",
         ]);
         return redirect('property');
     }
-    public function update($property_edit_id,Request $request)
+    public function update($property_edit_id,CreatepropertyRequest $request)
     {
         $property=property::FindOrFail($property_edit_id);
         $property->property = $request->input('property');

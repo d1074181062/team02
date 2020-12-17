@@ -54,4 +54,25 @@ class pokemon extends Model
                 'pokemons.place');
     }
 
+    public function scopeAllgroups($query)
+    {
+        $query->select('group')->groupBy('group');
+    }
+
+    public function scopegroup($query, $pos)
+    {
+        $query->join('property', 'pokemons.team_num', '=', 'property.id')
+            ->where('group', '=', $pos)
+            ->orderBy('place')
+            ->select(
+                'pokemons.id',
+                'pokemons.name',
+                'property.property as property',
+                'pokemons.height',
+                'pokemons.weight',
+                'pokemons.growing',
+                'pokemons.group',
+                'pokemons.place');
+    }
+
 }

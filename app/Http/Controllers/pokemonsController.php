@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\CreatepokemonsRequest;
 use App\Models\pokemon;
 use App\Models\property;
 use Carbon\Carbon;
@@ -15,19 +16,56 @@ class pokemonsController extends Controller
     {
 
         $pokemon = pokemon::Allpokemon()->get();
+        $groups =  pokemon::Allgroups()->get();
+        $data = [];
+        foreach ($groups as $group)
+        {
+            $data["$group->group"] = $group->group;
+        }
+        return view('pokemons.index',['pokemons'=>$pokemon, 'groups'=>$data]);
 
-        return view('pokemons.index',['pokemons'=>$pokemon]);
+
     }
+
+    public function group(Request $request)
+    {
+        $pokemon = pokemon::group($request->input('pos'))->get();
+
+        $groups =  pokemon::Allgroups()->get();
+        $data = [];
+        foreach ( $groups as  $group)
+        {
+            $data["$group->group"] = $group->group;
+        }
+        return view('pokemons.index', ['pokemons' => $pokemon, 'groups'=>$data]);
+    }
+
     public function growing()
     {
         $pokemon = pokemon::growing()->get();
-        return view('pokemons.index', ['pokemons'=>$pokemon]);
+        $groups =  pokemon::Allgroups()->get();
+        $data = [];
+        foreach ($groups as $group)
+        {
+            $data["$group->group"] = $group->group;
+        }
+        return view('pokemons.index',['pokemons'=>$pokemon, 'groups'=>$data]);
     }
 
     public function create()
     {
+        $properties = DB::table('property')
+            ->select('property.id', 'property.property')
+            ->orderBy('property.id', 'asc')
+            ->get();
 
-        return view('pokemons.create');
+        $data = [];
+        foreach ($properties as $property)
+        {
+            $data[$property->id] = $property->property;
+        }
+        return view('pokemons.create', ['properties' =>$data]);
+
 
     }
 
@@ -61,7 +99,7 @@ class pokemonsController extends Controller
 
 
     }
-    public function store(Request $request)
+    public function store(CreatepokemonsRequest $request)
     {
         $name=$request->input('name');
         $team_num=$request->input('team_num');
@@ -84,7 +122,7 @@ class pokemonsController extends Controller
         return redirect('pokemons');
 
     }
-    public function update($po_id,Request $request)
+    public function update($po_id,CreatepokemonsRequest $request)
     {
         $pokemon=pokemon::FindOrFail($po_id);
         $pokemon->name = $request->input('name');

@@ -3,3 +3,4 @@
 @include('header')
 @yield('contents')
 @include('footer')
+

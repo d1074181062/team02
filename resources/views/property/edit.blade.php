@@ -3,7 +3,7 @@
 @section('title','修改屬性')
 
 @section('header','修改屬性')
-
+@include('message.errors')
 @section('contents')
     <a href="{{ route('property.index')}}">回全屬性</a>
 

@@ -4,7 +4,7 @@
 </div>
 <div align="center" class="form-group">
     {!! Form::label('pokemon_team_num','派系') !!}
-    {!! Form::text('team_num',null,['class'=>'form-control']) !!}
+    {!! Form::select('team_num',$properties,['class'=>'form-control']) !!}
 </div>
 <div align="center" class="form-group">
     {!! Form::label('pokemon_height','身高') !!}
