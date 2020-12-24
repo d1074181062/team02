@@ -24,10 +24,22 @@ class CreatepropertyRequest extends FormRequest
     public function rules()
     {
         return [
-            'property'=>'required',
-            'characteristic'=>'required',
-            'home'=>'required',
-            'weakness'=>'required'
+            'property' => 'required|string',
+            'characteristic' => 'required|string',
+            'home' => 'required|string',
+            'weakness' => 'required|string'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            "property.required" => "派系必填",
+            "characteristic.required" => "特性必填",
+            "home.required" => "主場必填",
+            "weakness.required" => "弱點屬性必填"
+
+
         ];
     }
 }

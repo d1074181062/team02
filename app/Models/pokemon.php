@@ -74,5 +74,9 @@ class pokemon extends Model
                 'pokemons.group',
                 'pokemons.place');
     }
+    public function propertyss()
+    {
+        return $this->belongsTo('App\Models\property', 'team_num', 'id');
+    }
 
 }

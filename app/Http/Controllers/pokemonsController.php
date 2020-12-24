@@ -15,7 +15,7 @@ class pokemonsController extends Controller
     public function index()
     {
 
-        $pokemon = pokemon::Allpokemon()->get();
+        $pokemon = pokemon::all();
         $groups =  pokemon::Allgroups()->get();
         $data = [];
         foreach ($groups as $group)

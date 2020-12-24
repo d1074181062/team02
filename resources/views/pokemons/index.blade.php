@@ -14,7 +14,7 @@
         </select>
             <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                 <form action="{{ url('pokemons/group') }}" method='POST'>
-                    {!! Form::label('pos', '選取位置：') !!}
+                    {!! Form::label('pos', '選取地區：') !!}
                     {!! Form::select('pos', $groups, ['class' => 'form-control']) !!}
                     <input class="btn btn-default" type="submit" value="查詢" />
                     @csrf
@@ -40,7 +40,7 @@
 
         <td align="center">{{$pokemon->id}}</td>
         <td align="center">{{$pokemon->name}}</td>
-        <td align="center">{{$pokemon->property}}</td>
+        <td align="center">{{$pokemon->propertyss->property}}</td>
         <td align="center">{{$pokemon->height}}m</td>
         <td align="center">{{$pokemon->weight}}kg</td>
         <td align="center">

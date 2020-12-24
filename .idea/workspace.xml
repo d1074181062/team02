@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a15e5c9f-83c4-4a1e-83e1-f956d39693fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/message/errors.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreatepokemonsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreatepokemonsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreatepropertyRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreatepropertyRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/pokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/property.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/property.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/property/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/property/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/property/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/property/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../1217" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -197,7 +192,8 @@
       <workItem from="1606353499753" duration="10705000" />
       <workItem from="1606958681585" duration="17624000" />
       <workItem from="1607563029609" duration="19181000" />
-      <workItem from="1608178341328" duration="10651000" />
+      <workItem from="1608178341328" duration="12154000" />
+      <workItem from="1608773984411" duration="10357000" />
     </task>
     <servers />
   </component>

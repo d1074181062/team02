@@ -46,11 +46,12 @@ class propertyController extends Controller
 
 
         $temp=property::find($id);
-        if ($temp==null)
+        $pokemons=$temp->pokemons;
+        /*if ($temp==null)
             return"no find";
-        $property=$temp->toArray();
+        $property=$temp->toArray();*/
 
-        return view('property.show',$property);
+        return view('property.show',['temp'=>$temp,'pokemons'=>$pokemons]);
         /*if($id==5) {
             $pokemon_name = "豪力";
             $property_grop = "格鬥";
