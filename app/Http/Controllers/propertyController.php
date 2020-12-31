@@ -113,4 +113,51 @@ return view('property.edit', ['property' =>$property])->with("property_edit_id",
 
         return redirect('property');
     }
+
+    public function api_update(request $request)
+    {
+        $property=property::Find($request->input('id'));
+        if( $property==null)
+        {
+            return response()->json([
+                'status'=>0,
+            ]);
+        }
+        $property->property=$request->input('property');
+        $property->characteristic=$request->input('characteristic');
+        $property->home=$request->input('home');
+        $property->weakness=$request->input('weakness');
+        if($property->save())
+        {
+            return response()->json([
+                'status'=>1,
+            ]);
+        }else{
+            return response()->json([
+                'status'=>0,
+            ]);
+        }
+    }
+    public  function api_property()
+    {
+        return property::all();
+    }
+    public function api_delete(request $request)
+    {
+        $property=property::Find($request->input('id'));
+        if( $property==null)
+        {
+            return response()->json([
+                'status'=>0,
+            ]);
+        }
+
+        if($property->delete())
+        {
+            return response()->json([
+                'status'=>1,
+            ]);
+        }
+    }
+
 }

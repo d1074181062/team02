@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a15e5c9f-83c4-4a1e-83e1-f956d39693fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/team02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/team02.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/pokemonsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/propertyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreatepokemonsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreatepokemonsRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CreatepropertyRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CreatepropertyRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/pokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/property.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pokemons/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/property/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/property/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +138,7 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iaG0vGVpwcmMpYcikJ4G3MQFha" />
@@ -193,7 +195,8 @@
       <workItem from="1606958681585" duration="17624000" />
       <workItem from="1607563029609" duration="19181000" />
       <workItem from="1608178341328" duration="12154000" />
-      <workItem from="1608773984411" duration="10357000" />
+      <workItem from="1608773984411" duration="10950000" />
+      <workItem from="1609377272608" duration="10603000" />
     </task>
     <servers />
   </component>
@@ -201,10 +204,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608181815412">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609393416395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608181815412" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609393416395" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1608179702370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -221,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="686" y="575" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608178379233" />
-    <state x="867" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1602726644701">
+    <state x="867" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1609397723128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="867" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602726644701" />
+    <state x="867" y="147" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609397723128" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1608184515169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

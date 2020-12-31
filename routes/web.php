@@ -59,6 +59,8 @@ Route::patch('property/update/{id}', [propertyController::class,'update'])->wher
 
 Route::delete('property/delete/{id}', [propertyController::class,'delete'])->where('id','[0-9]+')->name('pokemons.delete');
 
+Route::get('/getcseftoken',function(){return csrf_token();});
+
 
 
 
