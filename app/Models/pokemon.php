@@ -40,18 +40,10 @@ class pokemon extends Model
     }
     public function scopegrowing($query)
     {
-        $query->join('property', 'pokemons.team_num', '=', 'property.id')
+        $query
             ->where('growing', '=', '否')
-            ->orderBy('pokemons.id')
-            ->select(
-                'pokemons.id',
-                'pokemons.name',
-                'property.property as property',
-                'pokemons.height',
-                'pokemons.weight',
-                'pokemons.growing',
-                'pokemons.group',
-                'pokemons.place');
+            ->orderBy('pokemons.id');
+
     }
 
     public function scopeAllgroups($query)
@@ -61,18 +53,8 @@ class pokemon extends Model
 
     public function scopegroup($query, $pos)
     {
-        $query->join('property', 'pokemons.team_num', '=', 'property.id')
-            ->where('group', '=', $pos)
-            ->orderBy('place')
-            ->select(
-                'pokemons.id',
-                'pokemons.name',
-                'property.property as property',
-                'pokemons.height',
-                'pokemons.weight',
-                'pokemons.growing',
-                'pokemons.group',
-                'pokemons.place');
+        $query->where('group', '=', $pos)
+            ->orderBy('place');
     }
     public function propertyss()
     {
